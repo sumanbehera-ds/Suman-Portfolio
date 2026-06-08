@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Suman Behera - Data Scientist portfolio with deployed ML, MLOps, NLP, and recommender system projects." />
+  <meta name="keywords" content="Suman Behera, Data Scientist, Machine Learning, MLOps, FastAPI, Docker, MLflow, DVC, PyTorch, Recommender Systems, NLP" />
+  <meta name="author" content="Suman Behera" />
+  <title>Suman Behera | Data Scientist Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-bg">
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+    <div class="gradient-orb orb-one"></div>
+    <div class="gradient-orb orb-two"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#home" aria-label="Go to home">
+      <span class="brand-mark">SB</span>
+      <span class="brand-text">Suman Behera</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> Open to Data Scientist / ML Engineer roles</div>
+        <h1>Suman Behera</h1>
+        <div class="typing-line" aria-label="Data Scientist, Machine Learning, MLOps">
+          <span id="typedText"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-subtitle">I build and deploy machine learning systems using Python, PyTorch, FastAPI, Docker, MLflow, and DVC.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="assets/resume/Suman_Behera_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn ghost" href="https://github.com/sumanbehera-ds" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/suman-01-behera" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <aside class="hero-visual reveal delay-1" aria-label="Profile summary card">
+        <div class="avatar-card">
+          <div class="avatar-orbit orbit-a"></div>
+          <div class="avatar-orbit orbit-b"></div>
+          <div class="avatar-core">SB</div>
+          <div class="avatar-meta">
+            <strong>Data Scientist</strong>
+            <span>ML • NLP • MLOps</span>
+          </div>
+        </div>
+        <div class="mini-terminal">
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+          <pre><code>&gt; deploy pipeline
+DVC ✓ MLflow ✓ Docker ✓ FastAPI ✓
+&gt; status
+Live APIs on Render & Hugging Face</code></pre>
+        </div>
+      </aside>
+    </section>
+
+    <section class="impact-strip reveal" aria-label="Impact metrics">
+      <article><strong>3+</strong><span>Deployed ML Projects</span></article>
+      <article><strong>2.75M+</strong><span>Interactions Processed</span></article>
+      <article><strong>11.5GB → 434MB</strong><span>Docker Optimization</span></article>
+      <article><strong>65.5%</strong><span>F1 Improvement</span></article>
+      <article><strong>0.813</strong><span>Churn Recall</span></article>
+      <article><strong>5+</strong><span>Architectures Benchmarked</span></article>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-header reveal">
+        <span class="section-kicker">About</span>
+        <h2>Machine learning systems, not notebook-only projects.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <p>MCA graduate focused on Data Science, Machine Learning, NLP, Recommender Systems, and MLOps. I build deployed ML systems that move from data preparation and model training to API serving, Dockerized deployment, and experiment tracking.</p>
+          <p>My strongest work includes a hybrid e-commerce recommender, a transformer-based fake news classifier, and a reproducible customer churn MLOps pipeline.</p>
+        </div>
+        <div class="about-card stack-card reveal delay-1">
+          <h3>Current focus</h3>
+          <ul>
+            <li>Production ML pipelines</li>
+            <li>FastAPI model serving</li>
+            <li>Docker and cloud deployment</li>
+            <li>Applied AI systems</li>
+            <li>Recommender systems and NLP</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-header reveal">
+        <span class="section-kicker">Featured Projects</span>
+        <h2>Deployed projects with measurable engineering outcomes.</h2>
+      </div>
+
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="recommender">Recommender</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+        <button class="filter-btn" data-filter="mlops">MLOps</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal" data-category="recommender mlops">
+          <div class="project-image frame-glow">
+            <img src="assets/screenshots/ecommerce-results.png" alt="E-commerce recommender generated recommendations" />
+          </div>
+          <div class="project-body">
+            <div class="project-topline"><span>Recommender Systems</span><span>Live</span></div>
+            <h3>Hybrid E-Commerce Recommendation Engine</h3>
+            <p>Hybrid recommender using Item-CF, Neural CF, GRU4Rec, and a popularity fallback for lightweight cloud deployment.</p>
+            <div class="project-metrics">
+              <span>2.75M+ interactions</span>
+              <span>HR@10 + MSE</span>
+              <span>11.5GB → 434MB</span>
+            </div>
+            <div class="tech-tags">
+              <span>PyTorch</span><span>FastAPI</span><span>Streamlit</span><span>MLflow</span><span>Docker</span><span>Render</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/sumanbehera-ds/hybrid-ecommerce-recommender-system" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://ecommerce-recommender-ui.onrender.com" target="_blank" rel="noopener">Live UI</a>
+              <a href="https://ecommerce-recommender-api-slg9.onrender.com" target="_blank" rel="noopener">API</a>
+              <button class="case-btn" data-case="recommender">View Case Study</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card featured reveal" data-category="nlp mlops">
+          <div class="project-image frame-glow">
+            <img src="assets/screenshots/fake-news-docs-predict.png" alt="Fake News API Swagger docs predict endpoint" />
+          </div>
+          <div class="project-body">
+            <div class="project-topline"><span>NLP + Transformers</span><span>Hugging Face</span></div>
+            <h3>Transformer-Based Fake News Classifier</h3>
+            <p>Weighted RoBERTa classifier with MLflow tracking, FastAPI inference, Docker deployment, and Hugging Face hosting.</p>
+            <div class="project-metrics">
+              <span>F1 0.3423 → 0.5664</span>
+              <span>5 models benchmarked</span>
+              <span>Render → HF Spaces</span>
+            </div>
+            <div class="tech-tags">
+              <span>RoBERTa</span><span>PyTorch</span><span>MLflow</span><span>FastAPI</span><span>Docker</span><span>Hugging Face</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/sumanbehera-ds/transformer-fake-news-detection" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://huggingface.co/spaces/sumanbehera-ds/roberta-fake-news-api" target="_blank" rel="noopener">Space</a>
+              <a href="https://huggingface.co/sumanbehera-ds/roberta-fake-news-detector" target="_blank" rel="noopener">Model Hub</a>
+              <button class="case-btn" data-case="fakeNews">View Case Study</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card featured reveal" data-category="mlops backend">
+          <div class="project-image frame-glow">
+            <img src="assets/screenshots/churn-api-docs.png" alt="Customer churn FastAPI Swagger docs" />
+          </div>
+          <div class="project-body">
+            <div class="project-topline"><span>MLOps Pipeline</span><span>Render API</span></div>
+            <h3>Customer Churn Prediction MLOps Pipeline</h3>
+            <p>Reproducible churn prediction pipeline with DVC orchestration, MLflow tracking, FastAPI serving, Docker, and CI.</p>
+            <div class="project-metrics">
+              <span>Recall 0.813</span>
+              <span>F1 0.607</span>
+              <span>ROC-AUC 0.837</span>
+            </div>
+            <div class="tech-tags">
+              <span>Scikit-learn</span><span>DVC</span><span>MLflow</span><span>FastAPI</span><span>Docker</span><span>GitHub Actions</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/sumanbehera-ds/customer-churn-mlops-pipeline" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://customer-churn-mlops-pipeline-85tj.onrender.com" target="_blank" rel="noopener">Live API</a>
+              <button class="case-btn" data-case="churn">View Case Study</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section screenshots" id="case-studies">
+      <div class="section-header reveal">
+        <span class="section-kicker">Evidence</span>
+        <h2>Screenshots from deployed APIs, UI, and experiment tracking.</h2>
+      </div>
+      <div class="screenshot-grid reveal">
+        <figure><img src="assets/screenshots/ecommerce-generated-full.png" alt="Recommender generated recommendations" /><figcaption>E-commerce recommender output</figcaption></figure>
+        <figure><img src="assets/screenshots/ecommerce-api-response.png" alt="Raw recommender API response" /><figcaption>Raw API response</figcaption></figure>
+        <figure><img src="assets/screenshots/fake-news-docs-health.png" alt="Fake News API docs health endpoint" /><figcaption>Fake News API docs</figcaption></figure>
+        <figure><img src="assets/screenshots/mlflow-runs.png" alt="MLflow experiment runs" /><figcaption>MLflow experiment runs</figcaption></figure>
+        <figure><img src="assets/screenshots/mlflow-run-details.png" alt="MLflow RoBERTa run details" /><figcaption>RoBERTa run metrics</figcaption></figure>
+        <figure><img src="assets/screenshots/mlflow-metric-charts.png" alt="MLflow metric charts" /><figcaption>Model metric comparison</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-header reveal">
+        <span class="section-kicker">Skills</span>
+        <h2>Focused stack for Data Science, MLOps, NLP, and recommendation systems.</h2>
+      </div>
+      <div class="skill-grid reveal">
+        <article><h3>Languages & Data</h3><p>Python, SQL, Pandas, NumPy, Scikit-learn</p></article>
+        <article><h3>Machine Learning</h3><p>Regression, Classification, XGBoost, Gradient Boosting, Model Evaluation</p></article>
+        <article><h3>Deep Learning & NLP</h3><p>PyTorch, TensorFlow, Hugging Face, DistilBERT, RoBERTa</p></article>
+        <article><h3>Recommender Systems</h3><p>Collaborative Filtering, NCF, GRU4Rec, Implicit Feedback, HR@10</p></article>
+        <article><h3>MLOps & Deployment</h3><p>Docker, FastAPI, MLflow, DVC, GitHub Actions, Render, Hugging Face Spaces</p></article>
+        <article><h3>Tools</h3><p>Git, GitHub, VS Code, Jupyter Notebook, Google Colab, Linux, MySQL</p></article>
+      </div>
+    </section>
+
+    <section class="section timeline" id="journey">
+      <div class="section-header reveal">
+        <span class="section-kicker">Journey</span>
+        <h2>Project-driven learning timeline.</h2>
+      </div>
+      <div class="timeline-list reveal">
+        <article><span>01</span><div><h3>MLOps foundation</h3><p>Built reproducible churn prediction with DVC, MLflow, FastAPI, Docker, and GitHub Actions.</p></div></article>
+        <article><span>02</span><div><h3>Recommender systems</h3><p>Implemented baseline, collaborative filtering, NCF, GRU4Rec, and lightweight deployment strategy.</p></div></article>
+        <article><span>03</span><div><h3>Transformers and NLP</h3><p>Fine-tuned RoBERTa variants, tracked experiments, and deployed inference on Hugging Face Spaces.</p></div></article>
+        <article><span>04</span><div><h3>Portfolio proof</h3><p>Integrated live links, screenshots, certificates, and repository evidence into a professional portfolio.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section repositories" id="repositories">
+      <div class="section-header reveal">
+        <span class="section-kicker">More Repositories</span>
+        <h2>Additional GitHub projects and learning proof.</h2>
+      </div>
+      <div class="repo-grid reveal">
+        <article><h3>Content-Based Movie Recommendation App</h3><p>Movie recommender using content-based filtering, cosine similarity, and TMDB poster retrieval.</p><div><span>Recommendation</span><span>Scikit-learn</span><span>Flask</span></div><a href="https://github.com/sumanbehera-ds/ml-movie-recommender" target="_blank" rel="noopener">GitHub</a></article>
+        <article><h3>Patient Management REST API</h3><p>FastAPI backend for managing patient records with structured JSON data and API endpoints.</p><div><span>FastAPI</span><span>Backend</span><span>Python</span></div><a href="https://github.com/sumanbehera-ds/fastapi-patient-management-api" target="_blank" rel="noopener">GitHub</a></article>
+        <article><h3>Python Voice Assistant</h3><p>Voice assistant with speech recognition, text-to-speech, website launching, music playback, and AI responses.</p><div><span>Python</span><span>Automation</span><span>AI Assistant</span></div><a href="https://github.com/sumanbehera-ds/JARVIS-MEGE-PROJECT" target="_blank" rel="noopener">GitHub</a></article>
+        <article><h3>100 Days of Python Practice</h3><p>Daily Python practice repository focused on consistent coding, problem solving, and mini-project building.</p><div><span>Python</span><span>Practice</span><span>Projects</span></div><a href="https://github.com/sumanbehera-ds/100-days-of-python-mini-projects" target="_blank" rel="noopener">GitHub</a></article>
+        <article><h3>freeCodeCamp Machine Learning Projects</h3><p>Project suite completed for freeCodeCamp Machine Learning with Python certification.</p><div><span>ML</span><span>TensorFlow</span><span>Python</span></div><a href="https://github.com/sumanbehera-ds/freecodecamp-machine-learning" target="_blank" rel="noopener">GitHub</a></article>
+        <article><h3>freeCodeCamp Data Analysis Projects</h3><p>Data analysis project suite covering statistics, visualization, time series, and regression tasks.</p><div><span>Data Analysis</span><span>Pandas</span><span>Visualization</span></div><a href="https://github.com/sumanbehera-ds/freecodecamp-data-analysis" target="_blank" rel="noopener">GitHub</a></article>
+      </div>
+    </section>
+
+    <section class="section certificates" id="certificates">
+      <div class="section-header reveal">
+        <span class="section-kicker">Certificates</span>
+        <h2>Verified learning credentials.</h2>
+      </div>
+      <div class="cert-grid reveal">
+        <a href="https://www.hackerrank.com/certificates/263adc0590ca" target="_blank" rel="noopener"><strong>HackerRank SQL Basic</strong><span>SQL certification</span></a>
+        <a href="https://www.hackerrank.com/certificates/58d46fdcaf39" target="_blank" rel="noopener"><strong>HackerRank SQL Intermediate</strong><span>SQL certification</span></a>
+        <a href="https://www.hackerrank.com/certificates/bc74e6e40852" target="_blank" rel="noopener"><strong>HackerRank SQL Advanced</strong><span>SQL certification</span></a>
+        <a href="https://freecodecamp.org/certification/sumanbehera-ds/machine-learning-with-python-v7" target="_blank" rel="noopener"><strong>freeCodeCamp ML with Python</strong><span>Machine learning projects</span></a>
+        <a href="https://freecodecamp.org/certification/sumanbehera-ds/data-analysis-with-python-v7" target="_blank" rel="noopener"><strong>freeCodeCamp Data Analysis</strong><span>Data analysis projects</span></a>
+        <a href="https://www.kaggle.com/learn/certification/sumanbehera01/intro-to-machine-learning" target="_blank" rel="noopener"><strong>Kaggle Intro to ML</strong><span>Issued May 25, 2026</span></a>
+        <a href="assets/certificates/Cisco_Python_Essentials_1.pdf" target="_blank" rel="noopener"><strong>Cisco Python Essentials 1</strong><span>Cisco Networking Academy</span></a>
+        <a href="https://courses.cognitiveclass.ai/certificates/c2005e0d2fef4bd1b88272810779b96e" target="_blank" rel="noopener"><strong>IBM Python 101 for Data Science</strong><span>Cognitive Class / IBM</span></a>
+      </div>
+    </section>
+
+    <section class="section resume" id="resume">
+      <div class="resume-panel reveal">
+        <div>
+          <span class="section-kicker">Resume</span>
+          <h2>Download the latest resume PDF.</h2>
+          <p>Focused one-page resume covering ML systems, MLOps, NLP, recommendation systems, education, and certificates.</p>
+        </div>
+        <div class="resume-actions">
+          <a class="btn primary" href="assets/resume/Suman_Behera_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+          <a class="btn secondary" href="assets/resume/Suman_Behera_Resume.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <span class="section-kicker">Contact</span>
+          <h2>Open to Data Scientist / ML Engineer roles.</h2>
+          <p>Bhubaneswar, India • Available for fresher Data Science, Machine Learning, MLOps, and AI project roles.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:beherasuman44444@gmail.com">Email</a>
+          <a href="https://github.com/sumanbehera-ds" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/suman-01-behera" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="caseModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Close case study">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
