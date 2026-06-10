@@ -39,14 +39,3 @@ assets/
 6. Save
 7. Your portfolio will be live at:
    `https://sumanbehera-ds.github.io/suman-portfolio/`
-
-## Update links
-
-Edit `index.html` if any live API, Hugging Face, certificate, or repository URL changes.
-
-## Color theme
-
-- Background: `#0F172A`
-- Primary: `#06B6D4`
-- Secondary: `#8B5CF6`
-- Text: `#F8FAFC`
