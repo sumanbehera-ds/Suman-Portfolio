@@ -38,4 +38,4 @@ assets/
 5. Select folder: `/root`
 6. Save
 7. Your portfolio will be live at:
-   `https://sumanbehera-ds.github.io/suman-portfolio/`
+   `https://sumanbehera-ds.github.io/Suman-Portfolio/`
